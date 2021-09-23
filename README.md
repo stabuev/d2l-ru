@@ -17,8 +17,6 @@
   <img width="200"  src="static/frontpage/_images/notebook.gif">
 </p>
 
-This open-source book represents our attempt to make deep learning approachable, teaching you the concepts, the context, and the code. The entire book is drafted in Jupyter notebooks, seamlessly integrating exposition figures, math, and interactive examples with self-contained code.
-
 Эта книга с открытым исходным кодом представляет собой нашу попытку сделать глубокое обучение доступным, обучая вас концепциям, контексту и коду. Вся книга написана в блокнотах Jupyter и естественным образом включает в себя иллюстраций, математику и интерактивные примеры с самодостаточным кодом.
 
 Наша цель - предложить источник который
@@ -60,8 +58,7 @@ This open-source book represents our attempt to make deep learning approachable,
 
 </details>
 
-
-If you find this book useful, please star (★) this repository or cite this book using the following bibtex entry:
+Если вы находите эту книга полезной, отметьте (★) этот репозиторий или процитируйте эту книгу, используя следующую запись bibtex: :
 
 ```
 @article{zhang2021dive,
@@ -73,7 +70,7 @@ If you find this book useful, please star (★) this repository or cite this boo
 ```
 
 
-## Endorsements
+## Рекомендации
 
 > <p>"In less than a decade, the AI revolution has swept from research labs to broad industries to every corner of our daily life.  Dive into Deep Learning is an excellent text on deep learning and deserves attention from anyone who wants to learn why deep learning has ignited the AI revolution: the most powerful technology force of our time."</p>
 > <b>&mdash; Jensen Huang, Founder and CEO, NVIDIA</b>
