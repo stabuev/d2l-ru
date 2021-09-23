@@ -1,14 +1,14 @@
-# Appendix: Mathematics for Deep Learning
+# Приложение: Математика для глубокого обучения
 :label:`chap_appendix_math`
 
-**Brent Werness** (*Amazon*), **Rachel Hu** (*Amazon*), and authors of this book
+**Brent Werness** (*Amazon*), **Rachel Hu** (*Amazon*), и авторы этой книги
 
 
-One of the wonderful parts of modern deep learning is the fact that much of it can be understood and used without a full understanding of the mathematics below it.  This is a sign that the field is maturing.  Just as most software developers no longer need to worry about the theory of computable functions, neither should deep learning practitioners need to worry about the theoretical foundations of maximum likelihood learning.
+Одной из замечательных вещей современного глубокого обучения является то, что большую его часть можно понять и использовать без полного понимания лежащей в его основе математики. Это признак того, что область взрослеет. Подобно тому, как большинству разработчиков программного обеспечения больше не нужно беспокоиться о теории вычислимых функций, так и специалистам-практикам глубокого обучения не следует переживать о теоретических основах обучения с максимальным правдоподобием. 
 
-But, we are not quite there yet.
+Но мы еще не совсем там.
 
-In practice, you will sometimes need to understand how architectural choices influence gradient flow, or the implicit assumptions you make by training with a certain loss function.  You might need to know what in the world entropy measures, and how it can help you understand exactly what bits-per-character means in your model.  These all require deeper mathematical understanding.
+На практике вам иногда нужно понимать, как выбор архитектуры влияет на движение градиента, или на неявные предположения, которые вы делаете при обучении с определенной функцией потерь. Возможно, вам потребуется знать, что измеряет энтропия, и как это поможет вам понять, что в точности означает бит на символ в вашей модели. Все это требует более глубокого математического понимания.
 
 This appendix aims to provide you the mathematical background you need to understand the core theory of modern deep learning, but it is not exhaustive.  We will begin with examining linear algebra in greater depth.  We develop a geometric understanding of all the common linear algebraic objects and operations that will enable us to visualize the effects of various transformations on our data.  A key element is the development of the basics of eigen-decompositions.
 
