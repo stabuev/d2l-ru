@@ -72,17 +72,17 @@
 
 ## Рекомендации
 
-> <p>"In less than a decade, the AI revolution has swept from research labs to broad industries to every corner of our daily life.  Dive into Deep Learning is an excellent text on deep learning and deserves attention from anyone who wants to learn why deep learning has ignited the AI revolution: the most powerful technology force of our time."</p>
-> <b>&mdash; Jensen Huang, Founder and CEO, NVIDIA</b>
+> <p>"Менее чем за десятилетие революция в области искусственного интеллекта перекинулась из исследовательских лабораторий в широкие отрасли, во все уголки нашей повседневной жизни. «Погружение в глубокое обучение» - это отличный учебник по глубокому обучению, который заслуживает внимания каждого, кто хочет узнать, почему глубокое обучение вызвало революцию в области искусственного интеллекта: самую мощную технологическую силу нашего времени."</p>
+> <b>&mdash; Jensen Huang, Основатель и CEO, NVIDIA</b>
 
-> <p>"This is a timely, fascinating book, providing with not only a comprehensive overview of deep learning principles but also detailed algorithms with hands-on programming code, and moreover, a state-of-the-art introduction to deep learning in computer vision and natural language processing. Dive into this book if you want to dive into deep learning!"</p>
+> <p>"Это своевременная и увлекательная книга, содержащая не только исчерпывающий обзор принципов глубокого обучения, но и подробные алгоритмы с практическим программным кодом, а также современное введение в глубокое обучение в областях компьютерного зрения и обработки естественного языка. Погрузитесь в эту книгу, если хотите погрузиться в глубокое обучение!"</p>
 > <b>&mdash; Jiawei Han, Michael Aiken Chair Professor, University of Illinois at Urbana-Champaign</b>
 
 > <p>"This is a highly welcome addition to the machine learning literature, with a focus on hands-on experience implemented via the integration of Jupyter notebooks. Students of deep learning should find this invaluable to become proficient in this field."</p>
 > <b>&mdash; Bernhard Schölkopf, Director, Max Planck Institute for Intelligent Systems</b>
 
 
-## Contributing ([Learn How](https://d2l.ai/chapter_appendix-tools-for-deep-learning/contributing.html))
+## Контрибьютить ([Узнай как](https://d2l.ai/chapter_appendix-tools-for-deep-learning/contributing.html))
 
 This open source book has benefited from pedagogical suggestions, typo corrections, and other improvements from community contributors. Your help is valuable for making the book better for everyone.
 
