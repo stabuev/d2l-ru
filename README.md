@@ -78,22 +78,28 @@
 > <p>"Это своевременная и увлекательная книга, содержащая не только исчерпывающий обзор принципов глубокого обучения, но и подробные алгоритмы с практическим программным кодом, а также современное введение в глубокое обучение в областях компьютерного зрения и обработки естественного языка. Погрузитесь в эту книгу, если хотите погрузиться в глубокое обучение!"</p>
 > <b>&mdash; Jiawei Han, Michael Aiken Chair Professor, University of Illinois at Urbana-Champaign</b>
 
-> <p>"This is a highly welcome addition to the machine learning literature, with a focus on hands-on experience implemented via the integration of Jupyter notebooks. Students of deep learning should find this invaluable to become proficient in this field."</p>
+> <p>"This is a highly welcome addition to the machine learning literature, with a focus on hands-on experience implemented via the integration of Jupyter notebooks. Students of deep learning should find this invaluable to become proficient in this field.
+> 
+> Это долгожданное дополнение к литературе по машинному обучению с упором на практику, реализованное посредством интеграции ноутбуков Jupyter. Это бесценно для студентов, изучающих глубокое обучение, чтобы стать профессионалом в этой области."</p>
 > <b>&mdash; Bernhard Schölkopf, Director, Max Planck Institute for Intelligent Systems</b>
 
 
-## Контрибьютить ([Узнай как](https://d2l.ai/chapter_appendix-tools-for-deep-learning/contributing.html))
+## Контрибютить ([Узнай как](https://d2l.ai/chapter_appendix-tools-for-deep-learning/contributing.html))
 
 This open source book has benefited from pedagogical suggestions, typo corrections, and other improvements from community contributors. Your help is valuable for making the book better for everyone.
 
-**Dear [D2L contributors](https://github.com/d2l-ai/d2l-en/graphs/contributors), please email your GitHub ID and name to d2lbook.en AT gmail DOT com so your name will appear on the [acknowledgments](https://d2l.ai/chapter_preface/index.html#Acknowledgments). Thanks.**
+Эта книга с открытым исходным кодом улучшается педагогическими предложеними, исправлением опечаток и другими предложениями, внесенными участниками сообщества. Ваша помощь очень важна для того, чтобы сделать книгу лучше для всех.
+
+**Дорогие [D2L контрибюторы](https://github.com/d2l-ai/d2l-en/graphs/contributors), пожалуйста пришлите ваш GitHub ID и имя на адрес d2lbook.en AT gmail DOT com чтобы мы могли добавить его в [благодарности](https://d2l.ai/chapter_preface/index.html#Acknowledgments). Спасибо.**
 
 
-## License Summary
+## Лицензии
 
-This open source book is made available under the Creative Commons Attribution-ShareAlike 4.0 International License. See [LICENSE](LICENSE) file.
+Эта книга с открытым исходным кодом пишется под лицензией Creative Commons Attribution-ShareAlike 4.0 International License. См. файл [лицензии](LICENSE).
 
-The sample and reference code within this open source book is made available under a modified MIT license. See the [LICENSE-SAMPLECODE](LICENSE-SAMPLECODE) file.
+The sample and reference code within this open source book is made available under a modified MIT license.
+Код примеров и справок в этой книге с открытым исходным кодом доступен по модифицированной лицензии MIT.
+ См. файл [LICENSE-SAMPLECODE](LICENSE-SAMPLECODE).
 
-[Chinese version](https://github.com/d2l-ai/d2l-zh) | [Discuss and report issues](https://discuss.d2l.ai/) | [Code of conduct](CODE_OF_CONDUCT.md) | [Other Information](INFO.md)
+[Китайская версия](https://github.com/d2l-ai/d2l-zh) | [Обсудить и сообщить о проблеме](https://discuss.d2l.ai/) | [Нормы поведения](CODE_OF_CONDUCT.md) | [Другая информация](INFO.md)
 
