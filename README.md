@@ -2,13 +2,13 @@
   <img src="https://raw.githubusercontent.com/d2l-ai/d2l-en/master/static/logo-with-text.png" width="350">
 </div>
 
-# D2L.ai: Interactive Deep Learning Book with Multi-Framework Code, Math, and Discussions
+# D2L.ai: Интерактивная книга по глубокому обучению с кодом охватывающим несколько фреймворков, математикой и обсуждениями
 
 [![Build Status](http://ci.d2l.ai/job/d2l-en/job/master/badge/icon)](http://ci.d2l.ai/job/d2l-en/job/master/)
 
-[Book website](https://d2l.ai/) | [STAT 157 Course at UC Berkeley](http://courses.d2l.ai/berkeley-stat-157/index.html) | Latest version: v0.17.0
+[Сайт книги](https://d2l.ai/) | [STAT 157 Course at UC Berkeley](http://courses.d2l.ai/berkeley-stat-157/index.html) | Последняя версия: v0.17.0
 
-<h5 align="center"><i>The best way to understand deep learning is learning by doing.</i></h5>
+<h5 align="center"><i>Лучший способ понять глубокое обучение - это учиться делая.</i></h5>
 
 <p align="center">
   <img width="200"  src="static/frontpage/_images/eq.jpg">
@@ -19,20 +19,22 @@
 
 This open-source book represents our attempt to make deep learning approachable, teaching you the concepts, the context, and the code. The entire book is drafted in Jupyter notebooks, seamlessly integrating exposition figures, math, and interactive examples with self-contained code.
 
-Our goal is to offer a resource that could
-1. be freely available for everyone;
-1. offer sufficient technical depth to provide a starting point on the path to actually becoming an applied machine learning scientist;
-1. include runnable code, showing readers how to solve problems in practice;
-1. allow for rapid updates, both by us and also by the community at large;
-1. be complemented by a forum for interactive discussion of technical details and to answer questions.
+Эта книга с открытым исходным кодом представляет собой нашу попытку сделать глубокое обучение доступным, обучая вас концепциям, контексту и коду. Вся книга написана в блокнотах Jupyter и естественным образом включает в себя иллюстраций, математику и интерактивные примеры с самодостаточным кодом.
 
-## Universities Using D2L
+Наша цель - предложить источник который
+1. в свободном доступе для каждого;
+2. обладает достаточной технической глубиной, чтобы стать стартом на пути становления специалистом по прикладному машинному обучению; 
+3. включает исполняемый код, показывающий читателю как решать задачи на практике;
+4. позволяет быстрые обновления, как нами так и сообществом в целом;
+5. дополнен форумом для интерактивных дискуссий технических деталей и ответов на вопросы.
+
+## Университеты использующие D2L
 <p align="center">
   <img width="600"  src="static/frontpage/_images/map.png">
 </p>
 
 
-## Cool Papers Using D2L
+## Статьи использующие D2L
 
 1. [**Descending through a Crowded Valley--Benchmarking Deep Learning Optimizers**](https://arxiv.org/pdf/2007.01547.pdf). R. Schmidt, F. Schneider, P. Hennig. *International Conference on Machine Learning, 2021*
 
@@ -44,7 +46,7 @@ Our goal is to offer a resource that could
 
 1. [**Detecting Human Driver Inattentive and Aggressive Driving Behavior Using Deep Learning: Recent Advances, Requirements and Open Challenges**](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9107077). M. Alkinani, W. Khan, Q. Arshad. *IEEE Access, 2020*
 
-<details><summary>more</summary>
+<details><summary>больше</summary>
 
 1. [**Diagnosing Parkinson by Using Deep Autoencoder Neural Network**](https://link.springer.com/chapter/10.1007/978-981-15-6325-6_5). U. Kose, O. Deperlioglu, J. Alzubi, B. Patrut. *Deep Learning for Medical Decision Support Systems, 2020*
 
