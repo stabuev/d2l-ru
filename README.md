@@ -78,9 +78,7 @@
 > <p>"Это своевременная и увлекательная книга, содержащая не только исчерпывающий обзор принципов глубокого обучения, но и подробные алгоритмы с практическим программным кодом, а также современное введение в глубокое обучение в областях компьютерного зрения и обработки естественного языка. Погрузитесь в эту книгу, если хотите погрузиться в глубокое обучение!"</p>
 > <b>&mdash; Jiawei Han, Michael Aiken Chair Professor, University of Illinois at Urbana-Champaign</b>
 
-> <p>"This is a highly welcome addition to the machine learning literature, with a focus on hands-on experience implemented via the integration of Jupyter notebooks. Students of deep learning should find this invaluable to become proficient in this field.
-> 
-> Это долгожданное дополнение к литературе по машинному обучению с упором на практику, реализованное посредством интеграции ноутбуков Jupyter. Это бесценно для студентов, изучающих глубокое обучение, чтобы стать профессионалом в этой области."</p>
+> <p>"Это долгожданное дополнение к литературе по машинному обучению с упором на практику, реализованное посредством интеграции ноутбуков Jupyter. Это бесценно для студентов, изучающих глубокое обучение, чтобы стать профессионалом в этой области."</p>
 > <b>&mdash; Bernhard Schölkopf, Director, Max Planck Institute for Intelligent Systems</b>
 
 
@@ -95,7 +93,6 @@
 
 Эта книга с открытым исходным кодом пишется под лицензией Creative Commons Attribution-ShareAlike 4.0 International License. См. файл [лицензии](LICENSE).
 
-The sample and reference code within this open source book is made available under a modified MIT license.
 Код примеров и справок в этой книге с открытым исходным кодом доступен по модифицированной лицензии MIT.
  См. файл [LICENSE-SAMPLECODE](LICENSE-SAMPLECODE).
 
