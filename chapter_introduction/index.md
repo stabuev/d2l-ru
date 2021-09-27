@@ -18,44 +18,12 @@
 
 ## Мотивирующий пример
 
-Before beginning writing, the authors of this book,
-like much of the work force, had to become caffeinated.
-We hopped in the car and started driving.
-Using an iPhone, Alex called out "Hey Siri",
-awakening the phone's voice recognition system.
-Then Mu commanded "directions to Blue Bottle coffee shop".
-The phone quickly displayed the transcription of his command.
-It also recognized that we were asking for directions
-and launched the Maps application (app)
-to fulfill our request.
-Once launched, the Maps app identified a number of routes.
-Next to each route, the phone displayed a predicted transit time.
-While we fabricated this story for pedagogical convenience,
-it demonstrates that in the span of just a few seconds,
-our everyday interactions with a smart phone
-can engage several machine learning models.
+Перед тем, как начать писать, авторы этой книги решили взбодрить себя кофеином. Мы сели в машину и поехали. Используя iPhone, Алекс сказал «Привет, Сири, активировав систему распознавания голоса в телефоне. Затем Му скомандовал: «Как добраться до кофейни Blue Bottle». Телефон быстро отобразил транскрипцию его команды. Он также ионял, что мы спрашивали дорогу, и запустил приложение "Карты", чтобы выполнить наш запрос. После запуска приложение определило несколько маршрутов. Рядом с каждым маршрутом телефон отображал прогнозируемое время в пути. Мы придумали эту историю для учебных целей, но она демонстрирует, что всего за несколько секунд нашего повседневного взаимодействия со смартфоном может задействоваться несколько моделей машинного обучения.
 
+Представьте, что вы пишете программу, которая реагирует на *пробуждающее слово*, такое как «Алекса», «Окей, Google» или «Привет, Siri». Попробуйте сделать это самостоятельно, используя только компьютер и редактор кода, как показано в: numref: `fig_wake_word`. С чего бы вы начали? Подумайте об этом ... проблема сложная. Каждую секунду микрофон собирает примерно 44000 сэмплов. Каждый сэмпл представляет собой измерение амплитуды звуковой волны. Какое правило могло бы надежно сопоставить фрагмент необработанного звука с достоверным предсказанием $\{\text{да}, \text{нет}\}$ о том, содержит ли этот фрагмент пробуждающее слово? Если вы застряли, не волнуйтесь. Мы тоже не знаем как написать такую программу с нуля. Вот почему мы используем машинное обучение.
 
-Imagine just writing a program to respond to a *wake word*
-such as "Alexa", "OK Google", and "Hey Siri".
-Try coding it up in a room by yourself
-with nothing but a computer and a code editor,
-as illustrated in :numref:`fig_wake_word`.
-How would you write such a program from first principles?
-Think about it... the problem is hard.
-Every second, the microphone will collect roughly 
-44000 samples.
-Each sample is a measurement of the amplitude of the sound wave.
-What rule could map reliably from a snippet of raw audio to confident predictions 
-$\{\text{yes}, \text{no}\}$
-on whether the snippet contains the wake word?
-If you are stuck, do not worry.
-We do not know how to write such a program from scratch either.
-That is why we use machine learning.
-
-![Identify a wake word.](../img/wake-word.svg)
+![Определите наличие пробуждающего слова.](../img/wake-word.svg)
 :label:`fig_wake_word`
-
 
 Here is the trick.
 Often, even when we do not know how to tell a computer
@@ -127,9 +95,9 @@ we *train* our model with data.
 As shown in :numref:`fig_ml_loop`, the training process usually looks like the following:
 
 1. Start off with a randomly initialized model that cannot do anything useful.
-1. Grab some of your data (e.g., audio snippets and corresponding $\{\text{yes}, \text{no}\}$ labels).
-1. Tweak the knobs so the model sucks less with respect to those examples.
-1. Repeat Step 2 and 3 until the model is awesome.
+2. Grab some of your data (e.g., audio snippets and corresponding $\{\text{yes}, \text{no}\}$ labels).
+3. Tweak the knobs so the model sucks less with respect to those examples.
+4. Repeat Step 2 and 3 until the model is awesome.
 
 ![A typical training process.](../img/ml-loop.svg)
 :label:`fig_ml_loop`
@@ -169,9 +137,9 @@ First, we would like to shed more light on some core components
 that will follow us around, no matter what kind of machine learning problem we take on:
 
 1. The *data* that we can learn from.
-1. A *model* of how to transform the data.
-1. An *objective function* that quantifies how well (or badly) the model is doing.
-1. An *algorithm* to adjust the model's parameters to optimize the objective function.
+2. A *model* of how to transform the data.
+3. An *objective function* that quantifies how well (or badly) the model is doing.
+4. An *algorithm* to adjust the model's parameters to optimize the objective function.
 
 ### Data
 
