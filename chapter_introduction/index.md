@@ -1,56 +1,9 @@
-# Introduction
+# Введение
 :label:`chap_introduction`
 
-Until recently, nearly every computer program 
-that you might interact with on an ordinary day
-was coded up as a rigid set of rules 
-specifying precisely how it should behave.
-Say that we wanted to write an application 
-to manage an e-commerce platform.
-After huddling around a whiteboard
-for a few hours to ponder the problem,
-we might settle on the broad strokes 
-of a working solution, for example:
-(i) users interact with the application through an interface
-running in a web browser or mobile application;
-(ii) our application interacts with a commercial-grade database engine
-to keep track of each user's state and maintain records
-of historical transactions; 
-and (iii) at the heart of our application,
-the *business logic* (you might say, the *brains*) of our application
-spells out in methodical a set of rules that map every 
-conceivable circumstance to the corresponding action
-that our program should take. 
+До недавних пор почти каждая компьютерная программа, с которой вы обычно взаимодействовали, была написана в виде жесткого набора правил, точно определяющих ее поведение. Допустим, мы хотели написать приложение для управления платформой электронной коммерции. Проведя несколько часов у доски и обдумав проблему, мы могли бы остановиться на общих чертах рабочего решения, например: (i) пользователи взаимодействуют с приложением через интерфейс запущенный в веб-браузере или мобильном приложении; (ii) наше приложение взаимодействует с ядром базы данных коммерческого уровня, чтобы отслеживать состояние каждого пользователя и вести записи транзакций; и (iii) в основе нашего приложения лежит *бизнес-логика* (можно сказать, *мозг*) в виде методично изложенного набора правил, которые сопоставляют все мыслимые обстоятельства с соответствующими действиями, которые должна выполнять наша программа.
 
-To build the brains of our application,
-we might enumerate all the common events
-that our program should handle.
-For example, whenever a customer clicks 
-to add an item to their shopping cart,
-our program should add an entry 
-to the shopping cart database table,
-associating that user's ID 
-with the requested product's ID.
-We might then attempt to step through 
-every possible corner case,
-testing the appropriateness of our rules
-and making any necessary modifications.
-What happens if a user 
-initiates a purchase with an empty cart? 
-While few developers ever get it 
-completely right the first time
-(it might take some test runs to work out the kinks),
-for the most part, we can write such programs 
-and confidently launch them 
-*before* ever seeing a real customer.
-Our ability to manually design automated systems
-that drive functioning products and systems, 
-often in novel situations,
-is a remarkable cognitive feat.
-And when you are able to devise solutions 
-that work $100\%$ of the time,
-you typically should not be 
-worrying about machine learning.
+Для построения мозга нашего приложения, мы должны были перечислить все возможные события, которые должна обрабатывать наша программа. Например, всякий раз, когда покупатель кликает, чтобы добавить товар в свою корзину, наша программа должна добавить запись в таблицу базы данных корзины покупок, связав идентификатор этого пользователя с идентификатором добавляемого продукта. Затем нам надо попытаться проверить всевозможные крайние случаи на соответствие правилам и внести необходимые изменения. Что произойдет, если пользователь совершит покупку с пустой корзиной? Хотя немногие разработчики пишут полностью верный код с первого раза (может потребоваться несколько тестовых прогонов, чтобы проработать баги), по большему счету мы можем писать такие программы и уверенно запускать их *прежде*, чем увидим реального клиента. Наша способность вручную разрабатывать автоматизированные системы, которые управляют функционирующими продуктами и системами, часто в новых ситуациях, является замечательным когнитивным достижением. А когда вы можете разрабатывать решения, которые работают $100\%$ времени, вам обычно не следует беспокоиться о машинном обучении. 
 
 Fortunately for the growing community 
 of machine learning scientists,
