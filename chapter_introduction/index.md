@@ -25,25 +25,7 @@
 ![Определите наличие пробуждающего слова.](../img/wake-word.svg)
 :label:`fig_wake_word`
 
-Here is the trick.
-Often, even when we do not know how to tell a computer
-explicitly how to map from inputs to outputs,
-we are nonetheless capable of performing the cognitive feat ourselves.
-In other words, even if you do not know
-how to program a computer to recognize the word "Alexa",
-you yourself are able to recognize it.
-Armed with this ability, we can collect a huge *dataset*
-containing examples of audio 
-and label those that do
-and that do not contain the wake word.
-In the machine learning approach, 
-we do not attempt to design a system
-*explicitly* to recognize wake words.
-Instead, we define a flexible program
-whose behavior is determined by a number of *parameters*.
-Then we use the dataset to determine the best possible set of parameters, 
-those that improve the performance of our program
-with respect to some measure of performance on the task of interest.
+Вот вам уловка. Часто, даже если мы не знаем, как написать программу отображающую входные данные в выходные, мы все же способны выполнять когнитивную задачу сами. Другими словами, даже если вы не знаете, как запрограммировать компьютер на распознавание слова «Алекса», вы сами можете его распознать. Вооружившись этой способностью, мы можем собрать огромный *набор данных*, содержащий примеры аудио, и поделить их на содержащие и не содержащие нужное нам слово. При использовании машинного обучения мы не пытаемся *явно* создать систему распознающую пробуждающее слово. Вместо этого мы определяем гибкую программу, поведение которой зависит от набора *параметров*. Затем мы используем наши данные для получения наилучшего возможного набора параметров, которые улучшают работу нашей программы относительно некоторой заданной в задаче метрике качества.
 
 You can think of the parameters as knobs that we can turn,
 manipulating the behavior of the program.
