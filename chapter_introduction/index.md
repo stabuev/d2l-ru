@@ -5,17 +5,10 @@
 
 Для построения мозга нашего приложения, мы должны были перечислить все возможные события, которые должна обрабатывать наша программа. Например, всякий раз, когда покупатель кликает, чтобы добавить товар в свою корзину, наша программа должна добавить запись в таблицу базы данных корзины покупок, связав идентификатор этого пользователя с идентификатором добавляемого продукта. Затем нам надо попытаться проверить всевозможные крайние случаи на соответствие правилам и внести необходимые изменения. Что произойдет, если пользователь совершит покупку с пустой корзиной? Хотя немногие разработчики пишут полностью верный код с первого раза (может потребоваться несколько тестовых прогонов, чтобы проработать баги), по большему счету мы можем писать такие программы и уверенно запускать их *прежде*, чем увидим реального клиента. Наша способность вручную разрабатывать автоматизированные системы, которые управляют функционирующими продуктами и системами, часто в новых ситуациях, является замечательным когнитивным достижением. А когда вы можете разрабатывать решения, которые работают $100\%$ времени, вам обычно не следует беспокоиться о машинном обучении. 
 
-Fortunately for the growing community 
-of machine learning scientists,
-many tasks that we would like to automate
-do not bend so easily to human ingenuity.
-Imagine huddling around the whiteboard 
-with the smartest minds you know,
-but this time you are tackling 
-one of the following problems:
+К счастью для растущего сообщества специалистов занимающихся машинным обучением, многие задачи, которые мы хотим автоматизировать, не так легко подчиняются человеку. Представьте, что вы у доски с самыми лучшими умами, но на этот раз вы решаете одну из следующих проблем:
 
 * Write a program that predicts tomorrow's weather given geographic information, satellite images, and a trailing window of past weather.
-* Write a program that takes in a factoid question, expressed in free-form text, and  answers it correctly.
+* Write a program that takes in a factoid question, expressed in free-form text, and answers it correctly.
 * Write a program that, given an image, identifies all of people depicted in it and draws outlines around each.
 * Write a program that presents users with products that they are likely to enjoy but unlikely, in the natural course of browsing, to encounter.
 
