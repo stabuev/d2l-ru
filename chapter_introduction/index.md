@@ -7,50 +7,16 @@
 
 К счастью для растущего сообщества специалистов занимающихся машинным обучением, многие задачи, которые мы хотим автоматизировать, не так легко подчиняются человеку. Представьте, что вы у доски с самыми лучшими умами, но на этот раз вы решаете одну из следующих проблем:
 
-* Write a program that predicts tomorrow's weather given geographic information, satellite images, and a trailing window of past weather.
-* Write a program that takes in a factoid question, expressed in free-form text, and answers it correctly.
-* Write a program that, given an image, identifies all of people depicted in it and draws outlines around each.
-* Write a program that presents users with products that they are likely to enjoy but unlikely, in the natural course of browsing, to encounter.
+* Написать программу, предсказывающую погоду на завтра с учетом географической информации, спутниковых изображений и информации о погоде в прошлом.
+* Напишисать программу, которая принимает на вход вопросы, выраженные в произвольной форме, и дает правильные ответы.
+* Напишисать программу, которая  идентифицирует всех людей на изображении, и обводит их контурами.
+* Напишисать программу, которая знакомит пользователей с продуктами, которые им понравятся, но с которыми они вряд ли столкнутся просматривая каталог.
 
-For these problems,
-even elite programmers would struggle
-to code up solutions from scratch.
-The reasons can vary. 
-Sometimes the program that we are looking for 
-follows a pattern that changes over time,
-so there is no fixed right answer! 
-In such cases, any successful solution 
-must adapt gracefully to a changing world. 
-At other times, the relationship (say between pixels,
-and abstract categories) may be too complicated,
-requiring thousands or millions of computations
-and following unknown principles. 
-As in image recognition, 
-the steps to perform a task
-often lie beyond our conscious understanding,
-even when our subconscious cognitive processes 
-can execute the task with ease. 
+Решить такие задачи с нуля будет нелегко даже лучшим программистам. Причины могут быть разными. Иногда алгоритм который мы ищем, следует паттерну меняющемуся со временем, поэтому нет неизменного правильного ответа! В таких случаях любое успешное решение должно адаптироваться к меняющемуся миру. В других случаях взаимосвязь (например, между пикселями и абстрактными категориями) может быть слишком сложной, требуя тысяч или миллионов вычислений и следуя неизвестным принципам. Как и при распознавании изображений, шаги по выполнению задачи часто выходят за рамки нашего сознательного понимания, даже когда наши подсознательные когнитивные процессы могут легко выполнить задачу.
 
+*Машинное обучение* - это изучение алгоритмов, которые могут учиться на собственном опыте. По мере того как алгоритм машинного обучения накапливает больше опыта, обычно в виде результатов наблюдений или взаимодействий с окружающей средой, его производительность улучшается. Сравните это с нашей детерминированной платформой электронной коммерции, которая следует одной и той же бизнес-логике, независимо от накопленного опыта, пока сами разработчики не разберутся и решат, что пора обновить программное обеспечение. В этой книге мы научим вас основам машинного обучения, уделяя особое внимание *глубокому обучению* - мощному набору методов, двигающему инновации в таких различных областях, как компьютерное зрение, обработка естественного языка, здравоохранение и геномика.
 
-*Machine learning* is the study of algorithms
-that can learn from experience.
-As a machine learning algorithm accumulates more experience,
-typically in the form of observational data 
-or interactions with an environment, 
-its performance improves.
-Contrast this with our deterministic e-commerce platform,
-which follows the same business logic,
-no matter how much experience accrues,
-until the developers themselves learn and decide
-that it is time to update the software.
-In this book, we will teach you 
-the fundamentals of machine learning,
-focusing in particular on *deep learning*, 
-a powerful set of techniques
-driving innovations in areas as diverse as computer vision,
-natural language processing, healthcare, and genomics.
-
-## A Motivating Example
+## Мотивирующий пример
 
 Before beginning writing, the authors of this book,
 like much of the work force, had to become caffeinated.
