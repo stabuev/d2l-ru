@@ -29,19 +29,7 @@
 
 Вы можете думать об этих параметрах как о ручках, которые мы можем крутить, управляя поведением программы. Программу с фиксированными параметрами мы называем *модель*. Набор всех конкретных программ (сопоставлений ввода-вывода), которые мы можем создать, управляя параметрами, называется *семейством* моделей. А метапрограмма, использующая наш набор данных для выбора параметров, называется *алгоритмом обучения*.
 
-Before we can go ahead and engage the learning algorithm,
-we have to define the problem precisely,
-pinning down the exact nature of the inputs and outputs,
-and choosing an appropriate model family.
-In this case, 
-our model receives a snippet of audio as *input*,
-and the model 
-generates a selection among 
-$\{\text{yes}, \text{no}\}$ as *output*.
-If all goes according to plan 
-the model's guesses will
-typically be correct as to 
-whether the snippet contains the wake word.
+Прежде чем мы сможем задействовать алгоритм обучения, нам нужно определить проблему, определить точную природу входных и выходных данных и выбрать подходящее семейство моделей. В этом случае наша модель получает фрагмент звука как *входные данные*, а модель возвращает выбор из $\{\text{да}, \text{нет}\}$ в качестве *результата*. Если все пройдет по плану, модели будет, как правило, верно угадывать наличие в фрагменте пробуждающего слова.
 
 If we choose the right family of models,
 there should exist one setting of the knobs
