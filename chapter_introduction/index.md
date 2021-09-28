@@ -31,36 +31,14 @@
 
 Прежде чем мы сможем задействовать алгоритм обучения, нам нужно определить проблему, определить точную природу входных и выходных данных и выбрать подходящее семейство моделей. В этом случае наша модель получает фрагмент звука как *входные данные*, а модель возвращает выбор из $\{\text{да}, \text{нет}\}$ в качестве *результата*. Если все пройдет по плану, модели будет, как правило, верно угадывать наличие в фрагменте пробуждающего слова.
 
-If we choose the right family of models,
-there should exist one setting of the knobs
-such that the model fires "yes" every time it hears the word "Alexa".
-Because the exact choice of the wake word is arbitrary,
-we will probably need a model family sufficiently rich that,
-via another setting of the knobs, it could fire "yes"
-only upon hearing the word "Apricot".
-We expect that the same model family should be suitable
-for "Alexa" recognition and "Apricot" recognition
-because they seem, intuitively, to be similar tasks.
-However, we might need a different family of models entirely
-if we want to deal with fundamentally different inputs or outputs,
-say if we wanted to map from images to captions,
-or from English sentences to Chinese sentences.
+Если мы возьмем верное семейство моделей, должна существовать такая настройка ручек, чтобы модель срабатывала положительно каждый раз, когда слышит слово «Алекса». Поскольку выбор слова для пробуждения является произвольным, нам, вероятно, понадобится достаточно богатое семейство моделей, срабатывающее на других настроек параметров при прослушивании слова «Абрикос». Мы ожидаем, что одно и то же семейство моделей должно подходить для распознавания «Алекса» и «Абрикос», потому что интуитивно задачи кажутся похожими. Однако нам может потребоваться совершенно другое семейство моделей, если мы хотим иметь дело с принципиально другими входами или выходами, скажем, если мы хотим преобразовать изображения в тексты или английские предложения в китайские.
 
-As you might guess, if we just set all of the knobs randomly,
-it is unlikely that our model will recognize "Alexa",
-"Apricot", or any other English word.
-In machine learning, 
-the *learning* is the process
-by which we discover the right setting of the knobs
-coercing the desired behavior from our model.
-In other words,
-we *train* our model with data.
-As shown in :numref:`fig_ml_loop`, the training process usually looks like the following:
+Можно догадаться, что если мы просто установим все ручки случайным образом, маловероятно, что наша модель распознает «Алекса», «Абрикос» или любое другое  слово. В машинном обучении *обучение* - это процесс с помощью которого мы находим правильную настройку параметров, приводящую к желаемому поведению нашей модели. Другими словами, мы *обучаем* нашу модель на данных. Как показано в: numref: `fig_ml_loop`, процесс обучения обычно выглядит следующим образом:
 
-1. Start off with a randomly initialized model that cannot do anything useful.
-2. Grab some of your data (e.g., audio snippets and corresponding $\{\text{yes}, \text{no}\}$ labels).
-3. Tweak the knobs so the model sucks less with respect to those examples.
-4. Repeat Step 2 and 3 until the model is awesome.
+1. Начните с модели со случайными настройками, которая не может сделать ничего полезного.
+2. Возьмите некоторые из ваших данных (например, аудиофрагменты и соответствующие им ответы $\{\text{да}, \text{нет}\}$).
+3. Отрегулируйте ручки так, чтобы модель реже ошибалась на этих данных.
+4. Повторяйте шаги 2 и 3, пока модель не станет отличной.
 
 ![A typical training process.](../img/ml-loop.svg)
 :label:`fig_ml_loop`
