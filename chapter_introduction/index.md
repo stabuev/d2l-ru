@@ -40,26 +40,12 @@
 3. Отрегулируйте ручки так, чтобы модель реже ошибалась на этих данных.
 4. Повторяйте шаги 2 и 3, пока модель не станет отличной.
 
-![A typical training process.](../img/ml-loop.svg)
+![Типичный процесс обучения.](../img/ml-loop.svg)
 :label:`fig_ml_loop`
 
-To summarize, rather than code up a wake word recognizer,
-we code up a program that can *learn* to recognize wake words,
-if we present it with a large labeled dataset.
-You can think of this act of determining a program's behavior
-by presenting it with a dataset as *programming with data*.
-That is to say,
-we can "program" a cat detector by providing our machine learning system
-with many examples of cats and dogs.
-This way the detector will eventually learn to emit a very large positive number if it is a cat, a very large negative number if it is a dog,
-and something closer to zero if it is not sure,
-and this barely scratches the surface of what machine learning can do.
-Deep learning,
-which we will explain in greater detail later,
-is just one among many popular methods
-for solving machine learning problems.
+Подводя итог, вместо того, чтобы программировать распознаватель слов пробуждения, мы создаем программу, которая может *научиться* распознавать слова пробуждения, если мы дадим ей большой размеченный набор данных. Определение поведения программы с помощью набора данных мы называем *программированием с данными*. Например, мы можем «запрограммировать» детектор кошек, снабдив нашу систему машинного обучения множеством примеров кошек и собак. Детектор в конечном итоге научится возвращать очень большое положительное число, если это кошка, очень большое отрицательное число, если это собака, и что-то близкое к нулю, если он не уверен. И это едва ли не самая малость из того, что может машинное обучение. Глубокое обучение, которое мы объясним более подробно позже, является лишь одним из многих популярных методов решения проблем машинного обучения.
 
-## Key Components
+## Ключевые компоненты
 
 In our wake word example, we described a dataset
 consisting of audio snippets and binary labels, 
