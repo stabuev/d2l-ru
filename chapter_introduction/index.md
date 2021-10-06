@@ -70,26 +70,7 @@
 
 ### Модели
 
-Most machine learning involves transforming the data in some sense.
-We might want to build a system that ingests photos and predicts smiley-ness.
-Alternatively,
-we might want to ingest a set of sensor readings
-and predict how normal vs. anomalous the readings are.
-By *model*, we denote the computational machinery for ingesting data
-of one type, 
-and spitting out predictions of a possibly different type.
-In particular, we are interested in statistical models
-that can be estimated from data.
-While simple models are perfectly capable of addressing
-appropriately simple problems,
-the problems
-that we focus on in this book stretch the limits of classical methods.
-Deep learning is differentiated from classical approaches
-principally by the set of powerful models that it focuses on.
-These models consist of many successive transformations of the data
-that are chained together top to bottom, thus the name *deep learning*.
-On our way to discussing deep models,
-we will also discuss some more traditional methods.
+В большинстве случаев машинное обучение включает в себя преобразование данных в некотором виде. Возможно, мы захотим создать систему, которая принимает фотографии и предсказывает улыбчивость. Или  получать показания сенсора и предсказывать, насколько нормальными или аномальными они будут. Под *моделью* мы подразумеваем технику вычисления получающую на вход данные одного типа и выдающую прогнозы, возможно, другого типа. В частности, нас интересуют статистические модели, которые можно оценить по данным. В то время как простые модели отлично подходят для решения простых задач, проблемы, на которых мы сосредоточимся в этой книге, выходят за рамки классических методов. Глубокое обучение отличается от классических подходов главным образом набором мощных моделей, на которых оно фокусируется. Эти модели состоят из множества последовательных преобразований данных, которые связаны друг с другом сверху вниз, отсюда и название *глубокое обучение*. По пути к обсуждению моделей глубокого обучения мы также обсудим некоторые более традиционные методы.
 
 ### Objective Functions
 
