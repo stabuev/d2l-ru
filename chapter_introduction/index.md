@@ -60,39 +60,11 @@
 
 В случае с изображениями, каждая отдельная фотография может представлять собой экземпляр данных представленный упорядоченным списком числовых значений, соответствующих яркости каждого пикселя. Цветная фотография $200\times 200$ будет состоять из $200\times 200\times 3 = 120000$ числовых значений, соответствующих яркости красного, зеленого и синего каналов для каждой точки изображения. В другой традиционной задаче мы можем попробовать предсказать, выживет или нет пациент, учитывая стандартный набор характеристик, таких как возраст, жизненно важные показатели и диагнозы.
 
-When every example is characterized by the same number of numerical values,
-we say that the data consists of fixed-length vectors
-and we describe the constant length of the vectors
-as the *dimensionality* of the data.
-As you might imagine, fixed-length can be a convenient property.
-If we wanted to train a model to recognize cancer in microscopy images,
-fixed-length inputs mean we have one less thing to worry about.
+Когда каждый элемент характеризуется одинаковым количеством числовых значений, мы говорим, что данные состоят из векторов фиксированной длины, и называем эту величину как *размерность* данных. Очевидно, фиксированная длина является удобным свойством. Если мы хотим обучить модель распознавать рак на  изображениях микроскопа, входные данные фиксированной длины означают, что у нас на одну проблему меньше.
 
-However, not all data can easily be represented as 
-*fixed-length* vectors.
-While we might expect microscope images to come from standard equipment,
-we cannot expect images mined from the Internet
-to all show up with the same resolution or shape.
-For images, we might consider cropping them all to a standard size,
-but that strategy only gets us so far.
-We risk losing information in the cropped out portions.
-Moreover, text data resists fixed-length representations even more stubbornly.
-Consider the customer reviews left on e-commerce sites
-such as Amazon, IMDB, and TripAdvisor.
-Some are short: "it stinks!". 
-Others ramble for pages.
-One major advantage of deep learning over traditional methods
-is the comparative grace with which modern models
-can handle *varying-length* data.
+Однако не все данные можно просто представить как векторы *фиксированной длины*. Мы можем ожидать, что изображения с микроскопов будут поступать со стандартного оборудования, но не стоит ждать, что  изображения, полученные из Интернета, будут иметь одинаковое разрешение или форму. Что касается изображений, мы можем подумать об их обрезке до стандартного размера, но эта стратегия подходит нам частично. Мы рискуем потерять информацию в обрезанных частях. Текстовые данные еще сильнее сопротивляются представлению в виде вектора фиксированной длины. Посмотрите на отзывы клиентов, оставленных на сайтах электронной коммерции, таких как Amazon, IMDB и TripAdvisor. Некоторые из них короткие: «Воняет!». Остальные занимают по нескольку страниц. Одним из основных преимуществ глубокого обучения перед традиционными методами является сравнительное изящество, с которым современные модели могут обрабатывать данные *переменной длины*.
 
-Generally, the more data we have, the easier our job becomes.
-When we have more data, we can train more powerful models
-and rely less heavily on pre-conceived assumptions.
-The regime change from (comparatively) small to big data
-is a major contributor to the success of modern deep learning.
-To drive the point home, many of the most exciting models in deep learning do not work without large datasets.
-Some others work in the small data regime,
-but are no better than traditional approaches.
+Как правило, чем больше у нас данных, тем легче становится наша работа. Когда у нас будет данных, мы можем обучать более мощные модели и меньше полагаться на заранее  заданные предположения. Переход со (сравнительно) небольших данных на большие стал основным вкладом в успех современного глубокого обучения. Подводя итог, можно сказать, что многие из наиболее интересных моделей глубокого обучения не работают без больших наборов данных. Некоторые могут работать и в режиме малых данных, но они как правило не улучшают традиционные подходы.
 
 Finally, it is not enough to have lots of data and to process it cleverly.
 We need the *right* data. 
