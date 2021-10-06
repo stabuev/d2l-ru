@@ -66,35 +66,9 @@
 
 Как правило, чем больше у нас данных, тем легче становится наша работа. Когда у нас будет данных, мы можем обучать более мощные модели и меньше полагаться на заранее  заданные предположения. Переход со (сравнительно) небольших данных на большие стал основным вкладом в успех современного глубокого обучения. Подводя итог, можно сказать, что многие из наиболее интересных моделей глубокого обучения не работают без больших наборов данных. Некоторые могут работать и в режиме малых данных, но они как правило не улучшают традиционные подходы.
 
-Finally, it is not enough to have lots of data and to process it cleverly.
-We need the *right* data. 
-If the data is full of mistakes,
-or if the chosen features are not predictive
-of the target quantity of interest, 
-learning is going to fail.
-The situation is captured well by the cliché:
-*garbage in, garbage out*.
-Moreover, poor predictive performance is not the only potential consequence.
-In sensitive applications of machine learning,
-like predictive policing, resume screening, and risk models used for lending,
-we must be especially alert to the consequences of garbage data.
-One common failure mode occurs in datasets where some groups of people
-are unrepresented in the training data.
-Imagine applying a skin cancer recognition system in the wild
-that had never seen black skin before.
-Failure can also occur when the data
-does not merely under-represent some groups
-but reflects societal prejudices.
-For example, 
-if past hiring decisions are used to train a predictive model
-that will be used to screen resumes,
-then machine learning models could inadvertently
-capture and automate historical injustices.
-Note that this can all happen without the data scientist
-actively conspiring, or even being aware.
+Наконец, недостаточно просто иметь много данных и грамотно их обрабатывать. Нам нужны *правильные* данные. Если данные полны ошибок, или если отобранные признаки не позволяют прогнозировать интересующее нас целевое значение, обучение будет неудачным. Ситуацию хорошо передает клише: *мусор на входе, мусор на выходе*. Более того, плохое качество прогноза - не единственное возможное последствие. В чувствительных приложениях машинного обучения, таких как прогнозирование для полиции, скриннинг резюме или модели рисков используемых для кредитования, мы должны быть особенно внимательны к возможным последствиям от мусора в данных. Один частый провал в работе моделей возникает из за того, что некоторые группы людей не представлены в обучающей выборке. Представьте себе применение системы распознавания рака кожи, которая никогда раньше не видела черной кожи. Ошибка также может произойти, в случае когда данные не просто недостаточно представляют некоторые группы людей, но и отражают общественные предрассудки. Например, если прошлые решения о приеме на работу используются для обучения модели прогнозирования, которая будет использоваться для просмотра резюме, то модели машинного обучения могут непреднамеренно вобрать в себя и автоматизировать историческую несправедливость. Обратите внимание, что все это может произойти без специального умысла или даже без ведома специалиста по данным.
 
-
-### Models
+### Модели
 
 Most machine learning involves transforming the data in some sense.
 We might want to build a system that ingests photos and predicts smiley-ness.
