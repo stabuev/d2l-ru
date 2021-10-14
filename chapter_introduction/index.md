@@ -82,55 +82,19 @@
 
 Обычно функция потерь определяется с учетом параметров модели и зависит от набора данных. Мы узнаем лучшие значения параметров нашей модели, минимизируя потери на данных состоящих из некоторого количества примеров, собранных для обучения. Однако хорошее качество предсказания модели на данных, на которых она училась не гарантирует анлогичного результата на новых данных. Поэтому мы обычно делим доступные данные на две чатсти: *обучающий набор данных* (или *обучающую выборку*, для подбора параметров модели) и *тестовый набор данных* (или *тестовую выборку*, которую мы откладываем для оценки качества работы), проверяя как модель работает на обеих выборках. Вы можете думать о результатах на обучающих данных как о результатах студента на пробных заданиях, используемых для подготовки к какому-то настоящему экзамену. Даже если результаты обнадеживают, это не гарантирует успешной сдачи экзамена. Другими словами, результаты на экзамене могут значительно отличаться от результатов во время обучения. Когда модель хорошо работает на обучающих данных, но не может быть обобщена на новые данные, мы говорим, что она *переобучена*. В реальной жизни это похоже на провал настоящего экзамена, несмотря на хорошие результаты при подготовке.
 
-### Optimization Algorithms
+### Алгоритмы оптимизации
 
-Once we have got some data source and representation,
-a model, and a well-defined objective function,
-we need an algorithm capable of searching
-for the best possible parameters for minimizing the loss function.
-Popular optimization algorithms for deep learning
-are based on an approach called *gradient descent*.
-In short, at each step, this method 
-checks to see, for each parameter,
-which way the training set loss would move
-if you perturbed that parameter just a small amount.
-It then updates
-the parameter in the direction that may reduce the loss.
+Как только мы получим некоторый источник и представление данных, модель и четко определенную целевую функцию, нам понадобится алгоритм, способный искать наилучшие возможные параметры для минимизации функции потерь. Популярные алгоритмы оптимизации для глубокого обучения основаны на подходе, называемом *градиентный спуск*. На каждом шаге этот метод проверяет для каждого параметра, как бы изменилась ошибка на обучающем наборе, если бы вы немного изменили этот параметр. Затем он обновляет параметр в направлении, которое может уменьшить ошибку.
 
-## Kinds of Machine Learning Problems
+## Виды задач машинного обучения
 
-The wake word problem in our motivating example
-is just one among
-many problems that machine learning can tackle.
-To motivate the reader further
-and provide us with some common language when we talk about more problems throughout the book,
-in the following we 
-list a sampling of machine learning problems.
-We will constantly refer to
-our aforementioned concepts 
-such as data, models, and training techniques.
+Проблема со пробуждающим словом в нашем мотивирующем примере - лишь одна из многих задач, с которыми может справиться машинное обучение. Чтобы еще больше мотивировать читателя и обеспечить нас некоторым общим языком, когда мы будем говорить о других задачах на протяжении всей книги, ниже мы перечислим виды задач машинного обучения. При этом мы будем постоянно ссылаться на вышеупомянутые концепции, такие как данные, модели и методы обучения.
 
-### Supervised Learning
+### Обучение с учителем
 
-Supervised learning addresses the task of
-predicting labels given input features.
-Each feature--label pair is called an example.
-Sometimes, when the context is clear, we may use the term *examples*
-to refer to a collection of inputs,
-even when the corresponding labels are unknown.
-Our goal is to produce a model
-that maps any input to a label prediction.
+Обучение с учителем решает задачу предсказания меток на основе входных признаков. Каждая пара признаки-метка называется примером. Иногда, когда контекст ясен, мы можем использовать термин *примеры* для обозначения набора входных данных, даже если соответствующие метки неизвестны. Наша цель - создать модель, которая сопоставляет любые входные данные с меткой-предсказанием.
 
-
-To ground this description in a concrete example,
-if we were working in healthcare,
-then we might want to predict whether or not
-a patient would have a heart attack.
-This observation, "heart attack" or "no heart attack",
-would be our label.
-The input features might be vital signs
-such as heart rate, diastolic blood pressure, 
-and systolic blood pressure.
+Приземлим описание на конкретный пример. Если бы мы работали в сфере здравоохранения, возможно нам понадобилось бы предсказать, будет ли у пациента сердечный приступ или нет. Это наблюдение, "сердечный приступ" или "без сердечного приступа", было бы нашей меткой. Входными признаками были бы такие важные показатели как частота сердечных сокращений, диастолическое артериальное давление и систолическое артериальное давление.
 
 The supervision comes into play because for choosing the parameters, we (the supervisors) provide the model with a dataset
 consisting of labeled examples,
