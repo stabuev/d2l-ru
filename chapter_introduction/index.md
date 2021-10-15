@@ -96,21 +96,11 @@
 
 Приземлим описание на конкретный пример. Если бы мы работали в сфере здравоохранения, возможно нам понадобилось бы предсказать, будет ли у пациента сердечный приступ или нет. Это наблюдение, "сердечный приступ" или "без сердечного приступа", было бы нашей меткой. Входными признаками были бы такие важные показатели как частота сердечных сокращений, диастолическое артериальное давление и систолическое артериальное давление.
 
-The supervision comes into play because for choosing the parameters, we (the supervisors) provide the model with a dataset
-consisting of labeled examples,
-where each example is matched with the ground-truth label.
-In probabilistic terms, we typically are interested in estimating
-the conditional probability of a label given input features.
-While it is just one among several paradigms within machine learning,
-supervised learning accounts for the majority of successful
-applications of machine learning in industry.
-Partly, that is because many important tasks
-can be described crisply as estimating the probability
-of something unknown given a particular set of available data:
+Обучение называется с учителем, потому что для выбора параметров мы предоставляем модели набор данных, состоящий из размеченных примеров, где каждому элементу сопоставляется верная меткой. В терминах вероятности, нас обычно интересует оценка вероятности метки при условии входных характеристик. Хотя это лишь одна из нескольких парадигм машинного обучения, она включает в себя большинство успешных применений машинного обучения в индустрии. Отчасти это связано с тем, что многие важные задачи можно  описать как оценку вероятности чего-то неизвестного на основе определенного набора доступных данных:
 
-* Predict cancer vs. not cancer, given a computer tomography image.
-* Predict the correct translation in French, given a sentence in English.
-* Predict the price of a stock next month based on this month's financial reporting data.
+* Предсказание наличия или отсутствия рака на основании изображения компьютерной томографии.
+* Предсказание правильного перевода на французский язык данного предложения на английском языке.
+* Прогноз ценф акции в следующем месяце на основе данных финансовой отчетности за этот месяц.
 
 Even with the simple description
 "predicting labels given input features"
