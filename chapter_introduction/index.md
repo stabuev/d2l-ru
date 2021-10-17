@@ -100,39 +100,16 @@
 
 * Предсказание наличия или отсутствия рака на основании изображения компьютерной томографии.
 * Предсказание правильного перевода на французский язык данного предложения на английском языке.
-* Прогноз ценф акции в следующем месяце на основе данных финансовой отчетности за этот месяц.
+* Прогноз цен акции в следующем месяце на основе данных финансовой отчетности за этот месяц.
 
-Even with the simple description
-"predicting labels given input features"
-supervised learning can take a great many forms
-and require a great many modeling decisions,
-depending on (among other considerations) the type, size,
-and the number of inputs and outputs.
-For example, we use different models to process sequences of arbitrary lengths
-and for processing fixed-length vector representations.
-We will visit many of these problems in depth
-throughout this book.
+Даже с таким простым определением «прогнозирование меток на основе входных признаков» обучение с учителем может принимать множество различных форм и требовать различных решений моделирования, в зависимости от (среди прочего) типа, размера и количества входных и выходных данных. Например, мы используем разные модели для обработки последовательностей произвольной длины и для обработки векторных представлений фиксированной длины. В этой книге мы подробно рассмотрим многие из этих проблем.
 
-Informally, the learning process looks something like the following.
-First, grab a big collection of examples for which the features are known
-and select from them a random subset,
-acquiring the ground-truth labels for each.
-Sometimes these labels might be available data that have already been collected
-(e.g., did a patient die within the following year?)
-and other times we might need to employ human annotators to label the data,
-(e.g., assigning images to categories).
-Together, these inputs and corresponding labels comprise the training set.
-We feed the training dataset into a supervised learning algorithm,
-a function that takes as input a dataset
-and outputs another function: the learned model.
-Finally, we can feed previously unseen inputs to the learned model,
-using its outputs as predictions of the corresponding label.
-The full process is drawn in :numref:`fig_supervised_learning`.
+Неформально процесс обучения выглядит так. Во-первых, возьмите большую коллекцию примеров, для которых известны свойства, и выберите из них случайное подмножество, получив для каждого истинные метки. Иногда эти метки уже известны нам (например, умер ли пациент в течение следующего года?), В некоторых случаях нам может потребоваться использование ручного труда для разметки данных (например, присвоение изображеням категорий). Вместе эти входные данные и соответствующие метки составляют обучающий набор. Мы загружаем обучающий набор данных в алгоритм обучения с учителем - функцию, которая принимает на вход набор данных и возвращает другую функцию: обученную модель. Наконец, мы можем передать в обученную модель данные которые она еще не видела, используя результат ее работы в качестве прогнозов соответствующей меток. Полный процесс нарисован в схеме :numref:`fig_supervised_learning`.
 
-![Supervised learning.](../img/supervised-learning.svg)
+![Обучение с учителем.](../img/supervised-learning.svg)
 :label:`fig_supervised_learning`
 
-#### Regression
+#### Регрессия
 
 Perhaps the simplest supervised learning task
 to wrap your head around is *regression*.
