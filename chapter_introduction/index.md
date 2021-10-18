@@ -122,41 +122,12 @@
 * Сколько часов продлится операция?
 * Какое количество дождя выпадет в городе в следующие 6 часов?
 
+Даже если вы никогда раньше не имели дело с машинным обучением, вероятно вы уже решали задачи регрессии. Представьте, например, что вам отремонтировали канализацию и ваш подрядчик потратил 3 часа на удаление мусора из канализационных труб. Потом он прислал вам счет на 350 долларов. А теперь представьте, что ваш друг нанял того же подрядчика на 2 часа и получил счет в 250 долларов. Если кто-то затем спросит вас, сколько ожидать от его предстоящего счета за удаление мусора, вы можете сделать несколько разумных предположений. Например, что большее количество отработанных часов стоит больше долларов. Также можно предположить, что существует некоторая базовая плата и что после подрядчик взимает почасовую оплату. Если эти предположения верны, то, учитывая эти два примера данных, вы уже могли бы определить структуру ценообразования подрядчика: 100 долларов в час плюс 50 долларов, чтобы появиться у вас дома. Если вы делали так, то вы уже понимаете общую идею линейной регрессии. 
 
-Even if you have never worked with machine learning before,
-you have probably worked through a regression problem informally.
-Imagine, for example, that you had your drains repaired
-and that your contractor spent 3 hours
-removing gunk from your sewage pipes.
-Then he sent you a bill of 350 dollars.
-Now imagine that your friend hired the same contractor for 2 hours
-and that he received a bill of 250 dollars.
-If someone then asked you how much to expect
-on their upcoming gunk-removal invoice
-you might make some reasonable assumptions,
-such as more hours worked costs more dollars.
-You might also assume that there is some base charge
-and that the contractor then charges per hour.
-If these assumptions held true, then given these two data examples,
-you could already identify the contractor's pricing structure:
-100 dollars per hour plus 50 dollars to show up at your house.
-If you followed that much then you already understand
-the high-level idea behind linear regression.
+В этом случае мы смогли воспроизвести параметры, которые точно соответствовали ценам подрядчика. Иногда это невозможно, например, если некоторая разница зависит от нескольких факторов, помимо двух ваших. В этих случаях мы попытаемся обучить модели, которые минимизируют расстояние между нашими прогнозами и фактическими значениями. В большинстве глав нашей книги мы сосредоточимся на минимизации значения квадратичной функции потерь. Как мы увидим позже, эта функция соответствует предположению
+что наши данные были искажены гауссовым шумом.
 
-In this case, we could produce the parameters
-that exactly matched the contractor's prices.
-Sometimes this is not possible, 
-e.g., if some of
-the variance owes to a few factors 
-besides your two features.
-In these cases, we will try to learn models
-that minimize the distance between our predictions and the observed values.
-In most of our chapters, we will focus on 
-minimizing the squared error loss function.
-As we will see later, this loss corresponds to the assumption
-that our data were corrupted by Gaussian noise.
-
-#### Classification
+#### Классификация
 
 While regression models are great for addressing *how many?* questions,
 lots of problems do not bend comfortably to this template.
