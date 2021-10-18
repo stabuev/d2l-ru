@@ -111,49 +111,16 @@
 
 #### Регрессия
 
-Perhaps the simplest supervised learning task
-to wrap your head around is *regression*.
-Consider, for example, a set of data harvested
-from a database of home sales.
-We might construct a table, 
-where each row corresponds to a different house,
-and each column corresponds to some relevant attribute,
-such as the square footage of a house, 
-the number of bedrooms, the number of bathrooms, and the number of minutes (walking) to the center of town.
-In this dataset, each example would be a specific house,
-and the corresponding feature vector would be one row in the table.
-If you live in New York or San Francisco,
-and you are not the CEO of Amazon, Google, Microsoft, or Facebook,
-the (sq. footage, no. of bedrooms, no. of bathrooms, walking distance)
-feature vector for your home might look something like: $[600, 1, 1, 60]$.
-However, if you live in Pittsburgh, it might look more like $[3000, 4, 3, 10]$.
-Feature vectors like this are essential
-for most classic machine learning algorithms.
+Возможно самая простая для понимания задача обучения с учителем, - это *регрессия*. Рассмотрим, например, набор данных, полученный из базы данных продаж домов. Мы могли бы построить таблицу, в которой каждая строка соответствует отдельному дому, а каждый столбец соответствует некоторому релевантному признаку, например, площади дома, количеству спален, количеству ванных комнат и количеству минут ходьбы до центра города.
 
-What makes a problem a regression is actually the output.
-Say that you are in the market for a new home.
-You might want to estimate the fair market value of a house,
-given some features like above.
-The label, the price of sale, is a numerical value.
-When labels take on arbitrary numerical values,
-we call this a *regression* problem.
-Our goal is to produce a model whose predictions
-closely approximate the actual label values.
+В этом датасете каждый элемент будет конкретным домом, а соответствующий вектор признаков будет одной строкой в таблице. Если вы живете в Нью-Йорке или Сан-Франциско и не являетесь генеральным директором Amazon, Google, Microsoft или Facebook, - вектор для вашего дома (площадь в футах, количество спален, количество ванных комнат, пешеходная доступность) может выглядеть примерно так: $[600, 1, 1, 60]$. Однако, если вы живете в Питтсбурге, это может больше походить на $[3000, 4, 3, 10]$. Подобные векторы признаков требуются для большинства классических алгоритмов машинного обучения.
 
+Что делает задачу регрессией, так это результат. Скажем вы ищете новый дом. Возможно, вы захотите оценить справедливую рыночную стоимость дома, учитывая некоторые параметры, указанные выше. Ответ, цена продажи, представляет собой числовое значение. Когда метки принимают произвольные числовые значения, мы называем это задачей *регрессии*. Наша цель - создать модель, прогнозы которой точно соответствуют фактическим значениям меток.
 
-Lots of practical problems are well-described regression problems.
-Predicting the rating that a user will assign to a movie
-can be thought of as a regression problem
-and if you designed a great algorithm to accomplish this feat in 2009,
-you might have won the [1-million-dollar Netflix prize](https://en.wikipedia.org/wiki/Netflix_Prize).
-Predicting the length of stay for patients in the hospital
-is also a regression problem.
-A good rule of thumb is that any *how much?* or *how many?* problem
-should suggest regression,
-such as:
+Множество практических задач - это хорошо описанные задачи регрессии. Предсказание рейтинга, который пользователь присвоит фильму, можно рассматривать как задачу регрессии, и если бы вы разработали отличный алгоритм для достижения этой цели в 2009 году, вы могли бы выиграть [приз Netflix в 1 миллион долларов] (https: //en.wikipedia.org/wiki/Netflix_Prize). Прогнозирование продолжительности пребывания пациентов в больнице также является задачей регрессии. Хорошее практическое правило состоит в том, что любая задача отвечающая на вопрос *сколько?* или *как много?* должна предполагать регрессию, например:
 
-* How many hours will this surgery take?
-* How much rainfall will this town have in the next six hours?
+* Сколько часов продлится операция?
+* Какое количество дождя выпадет в городе в следующие 6 часов?
 
 
 Even if you have never worked with machine learning before,
