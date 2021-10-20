@@ -148,15 +148,7 @@
 
 Это потому, что польза от вкусного обеда не стоит 20% риска умереть от него. Другими словами, размер  риска неопределенности намного превышает выгоду. Таким образом, нам нужно вычислить ожидаемый риск, который мы принимаем на себя, в соответствии с функцией потерь, то есть нам нужно умножить вероятность результата на выгоду (или вред), связанную с ней. В этом случае потери, понесенные от употребления гриба, могут составить $0,2 \times \infty + 0,8 \times 0 = \infty$, тогда как потеря при отказе от гриба составляет $0,2 \times 0 + 0,8 \times 1 = 0,8$. Наша осторожность была оправдана: как сказал бы нам любой миколог, гриб в: numref: `fig_death_cap` на самом деле является смертельно опасным.
 
-Classification can get much more complicated than just
-binary, multiclass, or even multi-label classification.
-For instance, there are some variants of classification
-for addressing hierarchies.
-Hierarchies assume that there exist some relationships among the many classes.
-So not all errors are equal---if we must err, we would prefer
-to misclassify to a related class rather than to a distant class.
-Usually, this is referred to as *hierarchical classification*.
-One early example is due to [Linnaeus](https://en.wikipedia.org/wiki/Carl_Linnaeus), who organized the animals in a hierarchy.
+Классификация может быть намного сложнее, чем просто бинарная, многоклассовая или даже классификация позволяющая присвоить несколько классов одному элементу. Например, есть несколько вариантов классификации для иерархий. Иерархии предполагают, что между множеством классов существуют определенные отношения. В этом случае, не все ошибки равны - при ошибке, мы бы предпочли ошибиться в пользу родственного классу, а не какого-то далекого. Обычно это называется *иерархической классификацией*. Один из первых примеров такой классификации принадлежит [Линнею] (https://en.wikipedia.org/wiki/Carl_Linnaeus), который организовал животных в иерархию.
 
 In the case of animal classification,
 it might not be so bad to mistake a poodle (a dog breed) for a schnauzer (another dog breed),
