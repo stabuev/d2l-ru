@@ -135,33 +135,16 @@
 
 По причинам, в которые мы погрузимся по мере изучения технических деталей, может быть сложно оптимизировать модель, которая выводит только жесткое категориальное значение, например, «кошка» или «собака». В таких случаях обычно гораздо проще выразить результаты модели на языке вероятностей. Учитывая свойства элемента, наша модель присваивает вероятность каждому допустимому классу. Возвращаясь к нашему примеру классификации животных, где классами являются $\mathrm{\{cat, dog\}}$, классификатор может увидеть изображение и вывести вероятность того, что на картинке кот равную 0.9. Мы можем интерпретировать это число, сказав, что классификатор на 90% уверен, что на изображении кошка. Величина вероятности для предсказанного класса передает одно понятие неопределенности. Это не единственное выражение неопределенности, и мы обсудим другие в более продвинутых главах.
 
-When we have more than two possible classes,
-we call the problem *multiclass classification*.
-Common examples include hand-written character recognition
-$\mathrm{\{0, 1, 2, ... 9, a, b, c, ...\}}$.
-While we attacked regression problems by trying
-to minimize the squared error loss function,
-the common loss function for classification problems is called *cross-entropy*,
-whose name can be demystified 
-via an introduction to information theory in subsequent chapters.
+Когда у нас более двух возможных классов, мы называем задачу *многоклассовой классификацией*. Распространенные примером такой задачи является распознавание рукописных символов $\mathrm{\{0, 1, 2, ... 9, a, b, c, ... \}}$. Если при решении задач регрессии мы пытаемсяминимизировать квадратичную функцию потерь ошибок, в задачах классификации в качестве функция потерь обычно используется *кросс-энтропия*, название которой можно прояснится во введении в теорию информации в последующих главах.
 
-Note that the most likely class is not necessarily
-the one that you are going to use for your decision.
-Assume that you find a beautiful mushroom in your backyard
-as shown in :numref:`fig_death_cap`.
+Обратите внимание, что наиболее вероятный класс не обязательно будет тем, который вы собираетесь использовать для принятия решения. Предположим, вы нашли на заднем дворе красивый гриб, как показано на: numref: `fig_death_cap`.
 
-![Death cap---do not eat!](../img/death-cap.jpg)
+![Ядовитый гриб---не ешьте его!](../img/death-cap.jpg)
 :width:`200px`
 :label:`fig_death_cap`
 
-Now, assume that you built a classifier and trained it
-to predict if a mushroom is poisonous based on a photograph.
-Say our poison-detection classifier outputs
-that the probability that
-:numref:`fig_death_cap` contains a death cap is 0.2.
-In other words, the classifier is 80\% sure
-that our mushroom is not a death cap.
-Still, you would have to be a fool to eat it.
+Теперь предположим, что вы построили классификатор и обучили его находить ядовитые грибы по фотографии. Скажем наша модель предсказала, что вероятность того, что гриб на фото :numref:`fig_death_cap` смертелен равна 0.2. Другими словами, классификатор на 80\% уверен
+что наш гриб не опасен. Это будет все еще глупостью есть этот гриб.
 That is because the certain benefit of a delicious dinner
 is not worth a 20\% risk of dying from it.
 In other words, the effect of the uncertain risk
