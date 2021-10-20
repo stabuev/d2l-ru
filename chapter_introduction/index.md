@@ -129,54 +129,11 @@
 
 #### Классификация
 
-While regression models are great for addressing *how many?* questions,
-lots of problems do not bend comfortably to this template.
-For example,
-a bank wants to add check scanning to its mobile app.
-This would involve the customer snapping a photo of a check
-with their smart phone's camera
-and the app would need to be able
-to automatically understand text seen in the image.
-Specifically,
-it would also need to understand handwritten text to be even more robust,
-such as mapping a handwritten character
-to one of the known characters.
-This kind of *which one?* problem is called *classification*.
-It is treated with a different set of algorithms
-than those used for regression although many techniques will carry over.
+Хотя регрессионные модели отлично подходят для ответа на вопросы типа «сколько?», многие задачи не соответствуют этому шаблону. Например, банк хочет добавить сканирование чеков в свое мобильное приложение. Для этого от покупателя потребуется сфотографировать чек на камеру своего смартфона, а приложение должно будет автоматически распознавать текст, отображаемый на изображении. Тут необходимо понимать, что рукописный текст является еще более сложным для распознавания, такая задача как сопоставление рукописного символа с одним из известных символов. Такого рода вопрос *какой?* называется *классификацией*. Он обрабатывается с помощью другого набора алгоритмов, чем те, которые используются для регрессии, хотя многие методы переносятся.
 
-In *classification*, we want our model to look at features,
-e.g., the pixel values in an image,
-and then predict which *category* (formally called *class*),
-among some discrete set of options, an example belongs.
-For handwritten digits, we might have ten classes,
-corresponding to the digits 0 through 9.
-The simplest form of classification is when there are only two classes,
-a problem which we call *binary classification*.
-For example, our dataset could consist of images of animals
-and our labels  might be the classes $\mathrm{\{cat, dog\}}$.
-While in regression, we sought a regressor to output a numerical value,
-in classification, we seek a classifier, whose output is the predicted class assignment.
+В задаче *классификации* мы хотим, чтобы наша модель посмотрела на признаки, например, на значения пикселей в изображении, а затем предсказала, к какой *категории* (или еще говорят *классу*) из некоторого дискретного набора значений принадлежит пример. Для рукописных цифр у нас может быть десять классов, соответствующих цифрам от 0 до 9. Самой простой формой классификации является разделение на два класса, проблема, которую мы называем *бинарной классификацией*. Например, наш набор данных может состоять из изображений животных, а наши метки могут быть классами $\mathrm{\{cat, dog\}}$. В задаче регрессии, мы искали регрессор для вывода числового значения, при классификации мы ищем классификатор, результатом работы которого является предсказанная принадлежность элемента к классу.
 
-For reasons that we will get into as the book gets more technical,
-it can be hard to optimize a model that can only output
-a hard categorical assignment, 
-e.g., either "cat" or "dog".
-In these cases, it is usually much easier to instead express
-our model in the language of probabilities.
-Given features of an example, 
-our model assigns a probability
-to each possible class. 
-Returning to our animal classification example
-where the classes are $\mathrm{\{cat, dog\}}$,
-a classifier might see an image and output the probability
-that the image is a cat as 0.9.
-We can interpret this number by saying that the classifier
-is 90\% sure that the image depicts a cat.
-The magnitude of the probability for the predicted class
-conveys one notion of uncertainty.
-It is not the only notion of uncertainty
-and we will discuss others in more advanced chapters.
+По причинам, в которые мы погрузимся по мере изучения технических деталей, может быть сложно оптимизировать модель, которая выводит только жесткое категориальное значение, например, «кошка» или «собака». В таких случаях обычно гораздо проще выразить результаты модели на языке вероятностей. Учитывая свойства элемента, наша модель присваивает вероятность каждому допустимому классу. Возвращаясь к нашему примеру классификации животных, где классами являются $\mathrm{\{cat, dog\}}$, классификатор может увидеть изображение и вывести вероятность того, что на картинке кот равную 0.9. Мы можем интерпретировать это число, сказав, что классификатор на 90% уверен, что на изображении кошка. Величина вероятности для предсказанного класса передает одно понятие неопределенности. Это не единственное выражение неопределенности, и мы обсудим другие в более продвинутых главах.
 
 When we have more than two possible classes,
 we call the problem *multiclass classification*.
