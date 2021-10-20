@@ -144,23 +144,9 @@
 :label:`fig_death_cap`
 
 Теперь предположим, что вы построили классификатор и обучили его находить ядовитые грибы по фотографии. Скажем наша модель предсказала, что вероятность того, что гриб на фото :numref:`fig_death_cap` смертелен равна 0.2. Другими словами, классификатор на 80\% уверен
-что наш гриб не опасен. Это будет все еще глупостью есть этот гриб.
-That is because the certain benefit of a delicious dinner
-is not worth a 20\% risk of dying from it.
-In other words, the effect of the uncertain risk
-outweighs the benefit by far.
-Thus, we need to compute the expected risk that we incur as the loss function,
-i.e., we need to multiply the probability of the outcome
-with the benefit (or harm) associated with it.
-In this case,
-the loss incurred by eating the mushroom
-can be $0.2 \times \infty + 0.8 \times 0 = \infty$,
-whereas the loss of discarding it is
-$0.2 \times 0 + 0.8 \times 1 = 0.8$.
-Our caution was justified:
-as any mycologist would tell us,
-the mushroom in :numref:`fig_death_cap` actually
-is a death cap.
+что наш гриб не опасен. Но будет все еще глупостью есть этот гриб.
+
+Это потому, что польза от вкусного обеда не стоит 20% риска умереть от него. Другими словами, размер  риска неопределенности намного превышает выгоду. Таким образом, нам нужно вычислить ожидаемый риск, который мы принимаем на себя, в соответствии с функцией потерь, то есть нам нужно умножить вероятность результата на выгоду (или вред), связанную с ней. В этом случае потери, понесенные от употребления гриба, могут составить $0,2 \times \infty + 0,8 \times 0 = \infty$, тогда как потеря при отказе от гриба составляет $0,2 \times 0 + 0,8 \times 1 = 0,8$. Наша осторожность была оправдана: как сказал бы нам любой миколог, гриб в: numref: `fig_death_cap` на самом деле является смертельно опасным.
 
 Classification can get much more complicated than just
 binary, multiclass, or even multi-label classification.
