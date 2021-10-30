@@ -43,9 +43,9 @@ If you'd like to contribute, but don't have a project in mind, look at the [open
 
 In addition to written content, we really appreciate new examples and code samples for our documentation, such as examples for different platforms or environments, and code samples in additional languages.
 
-## Code of conduct
+## Нормы поведения
 
-This project has adopted the [Amazon Open Source Code of Conduct](https://aws.github.io/code-of-conduct). For more information, see the [Code of Conduct FAQ](https://aws.github.io/code-of-conduct-faq) or contact [opensource-codeofconduct@amazon.com](mailto:opensource-codeofconduct@amazon.com) with any additional questions or comments.
+В этом проекте принят к использованию Кодекс открытого исходного кода Amazon ([Amazon Open Source Code of Conduct](https://aws.github.io/code-of-conduct)). Для получения дополнительной информации смотрите ["Часто задаваемые вопросы о Кодексе поведения"](https://aws.github.io/code-of-conduct-faq) или обращайтесь с любыми дополнительными вопросами или комментариями по адресу opensource-codeofconduct@amazon.com.
 
 ## Security issue notifications
 
