@@ -3,17 +3,10 @@
 tab.interact_select(['mxnet', 'pytorch', 'tensorflow'])
 ```
 
-# Linear Regression
+# Линейная регрессия
 :label:`sec_linear_regression`
 
-Regression problems pop up whenever we want to predict a numerical value.
-Common examples include predicting prices (of homes, stocks, etc.),
-predicting the length of stay (for patients in the hospital),
-demand forecasting (for retail sales), among countless others.
-Not every prediction problem is a classic regression problem.
-Later on, we will introduce classification problems,
-where the goal is to predict membership among a set of categories.
-
+Потребность в применении регрессии возникает всякий раз, когда мы хотим предсказать числовое значение. Типичными примерами регрессии являются прогнозирование цен (домов, имущества и т.д.), продолжительности пребывания пациентов в больнице, спроса (для розничных продаж) и многие другие. Но не каждая проблема прогнозирования может быть решена с помощью регрессии. Так, позже мы изучим задачи классификации, цель которых - предсказать принадлежность к набору категорий.
 
 ## Basics
 
