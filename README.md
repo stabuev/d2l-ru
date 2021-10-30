@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/d2l-ai/d2l-en/master/static/logo-with-text.png" width="350">
 </div>
 
-# D2L.ai: Интерактивная книга по глубокому обучению с кодом охватывающим несколько фреймворков, математикой и обсуждениями
+# D2L.ai: Интерактивная книга по глубокому обучению с кодом, охватывающим несколько фреймворков, математикой и обсуждениями
 
 [![Build Status](http://ci.d2l.ai/job/d2l-en/job/master/badge/icon)](http://ci.d2l.ai/job/d2l-en/job/master/)
 
