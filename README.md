@@ -8,7 +8,7 @@
 
 [Сайт книги](https://d2l.ai/) | [STAT 157 Course at UC Berkeley](http://courses.d2l.ai/berkeley-stat-157/index.html) | Последняя версия: v0.17.0
 
-<h5 align="center"><i>Лучший способ понять глубокое обучение - это учиться, делая.</i></h5>
+<h5 align="center"><i>Лучший способ понять глубокое обучение - это учиться на практике.</i></h5>
 
 <p align="center">
   <img width="200"  src="static/frontpage/_images/eq.jpg">
