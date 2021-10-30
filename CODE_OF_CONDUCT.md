@@ -1,4 +1,2 @@
-## Code of Conduct
-This project has adopted the [Amazon Open Source Code of Conduct](https://aws.github.io/code-of-conduct). 
-For more information see the [Code of Conduct FAQ](https://aws.github.io/code-of-conduct-faq) or contact 
-opensource-codeofconduct@amazon.com with any additional questions or comments.
+## Нормы поведения
+В этом проекте принят к использованию Кодекс открытого исходного кода Amazon ([Amazon Open Source Code of Conduct](https://aws.github.io/code-of-conduct)). Для получения дополнительной информации смотрите ["Часто задаваемые вопросы о Кодексе поведения"](https://aws.github.io/code-of-conduct-faq) или обращайтесь с любыми дополнительными вопросами или комментариями по адресу opensource-codeofconduct@amazon.com.
