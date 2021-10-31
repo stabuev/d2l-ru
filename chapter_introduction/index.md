@@ -152,21 +152,15 @@
 
 В случае классификации животных было бы неплохо принять пуделя за шнауцера (породы собак), но наша модель должна быть оштрафована гораздо сильнее, если она перепутает пуделя с динозавром. Соответствующая иерархия может зависеть от того, как вы планируете использовать модель. Например, гремучие и подвязочные змеи могут быть рядом на филогенетическом дереве, но принятие гремучей змеи за ужа может быть смертельным.
 
-#### Tagging
+#### Разметка
 
-Some classification problems fit neatly
-into the binary or multiclass classification setups.
-For example, we could train a normal binary classifier
-to distinguish cats from dogs.
-Given the current state of computer vision,
-we can do this easily, with off-the-shelf tools.
-Nonetheless, no matter how accurate our model gets,
-we might find ourselves in trouble when the classifier
-encounters an image of the *Town Musicians of Bremen*,
-a popular German fairy tale featuring four animals
-in :numref:`fig_stackedanimals`.
+Некоторые задачи классификации вполне соответствуют рамкам бинарой или многоклассовой классификации. Например, мы могли бы обучить обычный бинарный классификатор
+отличать кошек от собак. Учитывая текущее состояние компьютерного зрения,
+мы можем сделать это легко с помощью стандартных инструментов. Тем не менее, какой бы точной ни была наша модель, у нас могут возникнуть проблемы, если классификатор
+встретит изображение *Бременских музыкантов* из популярной немецкой сказки о четырех животных
+ :numref:`fig_stackedanimals`.
 
-![A donkey, a dog, a cat, and a rooster.](../img/stackedanimals.png)
+![Осел, собака, кот и петух.](../img/stackedanimals.png)
 :width:`300px`
 :label:`fig_stackedanimals`
 
